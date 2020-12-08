@@ -1,0 +1,70 @@
+.shopee {
+  background-image: url("../images/shoppee.png");
+}
+
+.hackreact {
+  background-image: url("../images/hackreact.png");
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.blur:hover {
+  filter: none;
+  transition: ease-in-out;
+  transition: 200ms;
+}
+
+.photo {
+  background-image: url("../images/luwi.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.75rem;
+}
+
+.background {
+  background-image: url("../images/Bg.jpg");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: contain;
+}
+
+.btn2 {
+  background-color: transparent;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-width: 2px;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 2.5rem;
+  width: 8rem;
+}
+
+.btn2:before:after {
+  background-color: white;
+  height: 0rem;
+}
+.btn2:hover {
+  background-color: white;
+  color: black;
+  transition: linear;
+  transition-duration: 200ms;
+  height: 2.5rem;
+}
+
+.btn3:before:after {
+  background-color: black;
+  height: 0rem;
+  width: 128px;
+}
+.btn3:hover {
+  background-color: black;
+  color: white;
+  transition: linear;
+  transition-duration: 200ms;
+  height: 2.5rem;
+  width: 128px;
+}
