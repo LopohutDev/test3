@@ -4,9 +4,9 @@ import GetInTouch from "./layers/GetInTouch";
 function Contact() {
   return (
     <div className="w-screen text-white bg-black">
-      <div className="flex justify-between pt-16 mx-auto max-w-7xl">
-        <div className="flex items-center justify-center w-1/3 h-24">
-          <div className="w-12 h-12 mx-12 ">
+      <div className="flex flex-col items-center justify-between max-w-sm pt-16 mx-auto lg:flex-row lg:max-w-7xl">
+        <div className="flex flex-col items-center justify-center w-1/3 h-24 text-xs text-center lg:text-left lg:text-base lg:flex-row">
+          <div className="w-12 h-12 mx-auto ">
             <svg
               className="w-12 h-12 text-red-500 fill-current"
               id="Capa_1"
@@ -26,8 +26,8 @@ function Contact() {
             <p className="text-sm text-gray-400">www.facebook.com/Lopohut</p>
           </div>
         </div>
-        <div className="flex items-center justify-center w-1/3 h-24">
-          <div className="w-12 h-12 mx-12">
+        <div className="flex flex-col items-center justify-center w-1/3 h-24 text-xs text-center lg:text-left lg:text-base lg:flex-row">
+          <div className="w-12 h-12 mx-auto">
             <svg
               className="w-12 h-12 text-red-500 fill-current"
               id="Capa_1"
@@ -50,8 +50,8 @@ function Contact() {
             <p className="text-sm text-gray-400">johnlouie.sarraga@gmail.com</p>
           </div>
         </div>
-        <div className="flex items-center justify-center w-1/3 h-24">
-          <div className="w-12 h-12 mx-12 ">
+        <div className="flex flex-col items-center justify-center w-1/3 h-24 text-xs text-center lg:text-left lg:text-base lg:flex-row">
+          <div className="w-12 h-12 mx-auto ">
             <svg
               className="w-12 h-12 text-red-500 fill-current"
               id="Capa_1"

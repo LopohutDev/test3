@@ -2,10 +2,10 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className="max-w-4xl mx-auto mt-64 text-white rounded-lg shadow-lg">
+    <div className="mx-auto mt-64 text-white rounded-lg shadow-lg max-w-xm lg:max-w-4xl">
       <div>
         <div className="flex items-center justify-center">
-          <div className="w-12 h-12 mr-6 text-sm rounded-full my-7">
+          <div className="mt-2 mr-6 text-sm rounded-full w-7 h-7 lg:w-12 lg:h-12 lg:my-7">
             <svg
               className="text-white fill-current animation"
               version="1.1"
@@ -23,16 +23,18 @@ function Skills() {
               </g>
             </svg>
           </div>
-          <h1 className="text-6xl font-semibold">Skills Overview</h1>
+          <h1 className="text-2xl font-semibold lg:text-6xl">
+            Skills Overview
+          </h1>
         </div>
-        <p className="mt-2 text-lg text-center">
+        <p className="mt-2 text-base text-center lg:text-lg">
           I am a newbie programmer but I can give you a quality and responsive
           website.
         </p>
       </div>
       <div className="flex max-w-4xl mx-auto mt-10">
-        <div className="w-1/2 p-4 m-6 bg-red-800 rounded-2xl">
-          <div className="flex items-center justify-center w-20 h-20 mx-auto text-sm bg-gray-600 rounded-full my-7">
+        <div className="w-1/2 p-2 m-2 bg-red-800 lg:p-4 lg:m-6 rounded-2xl">
+          <div className="flex items-center justify-center w-16 h-16 p-2 mx-auto text-sm bg-gray-600 rounded-full lg:w-20 lg:h-20 my-7">
             <svg
               className="w-12 h-12 text-white fill-current "
               version="1.1"
@@ -74,14 +76,14 @@ function Skills() {
             </svg>
           </div>
           <h2 className="text-2xl font-semibold text-center">Frontend</h2>
-          <div className="flex flex-wrap h-16 p-2 mt-3 text-sm bg-gray-700 rounded-xl">
+          <div className="flex flex-wrap p-2 mt-3 text-xs bg-gray-700 lg:text-sm rounded-xl">
             <p className="m-1 skill">React Js</p>
             <p className="m-1 skill">HTML</p>
             <p className="m-1 skill">Tailwind CSS</p>
           </div>
         </div>
-        <div className="w-1/2 p-4 m-6 bg-red-800 rounded-2xl">
-          <div className="flex items-center justify-center w-20 h-20 mx-auto text-sm bg-gray-600 rounded-full my-7">
+        <div className="w-1/2 p-2 m-2 bg-red-800 lg:p-4 lg:m-6 rounded-2xl">
+          <div className="flex items-center justify-center w-16 h-16 p-2 mx-auto text-sm bg-gray-600 rounded-full lg:w-20 lg:h-20 my-7">
             <svg
               className="w-10 h-10 text-white fill-current"
               version="1.1"

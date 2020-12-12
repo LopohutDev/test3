@@ -11,9 +11,10 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="">
+    <div className="w-screen">
       <Navbar />
       {/* <Chat /> */}
+      <div className="h-16"></div>
       <Switch>
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />

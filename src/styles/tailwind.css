@@ -5,13 +5,8 @@
 @tailwind utilities;
 
 @layer components {
-  @screen sm {
-    .btn {
-      @apply w-12 mx-1 text-sm text-white;
-    }
-  }
   .btn {
-    @apply w-24 mx-2 text-white;
+    @apply w-10 mx-1 text-sm text-white lg:w-24 lg:mx-2;
   }
   .btn:hover {
     @apply text-red-500 transition-all;
@@ -26,15 +21,18 @@
     @apply border border-white;
   }
   .skill {
-    @apply h-6 px-2 bg-gray-600 rounded-full;
+    @apply flex items-center justify-center p-2 bg-gray-600 rounded-3xl;
   }
   .animation {
     @apply motion-safe:animate-spin;
   }
   .fbtn {
-    @apply w-32 h-10 mx-5;
+    @apply mx-2 lg:mx-5 lg:w-32 lg:h-10;
   }
   .fbtn:hover {
-    @apply border-b-2 border-white animate-bounce;
+    @apply text-red-500 border-b-2 border-white animate-bounce;
+  }
+  .fbtn > svg:hover {
+    @apply text-red-500;
   }
 }

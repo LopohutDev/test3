@@ -6,8 +6,13 @@
   background-image: url("../images/hackreact.png");
 }
 
+@media (min-width: 1024px) {
+  .blur {
+    filter: blur(3px);
+  }
+}
 .blur {
-  filter: blur(3px);
+  filter: none);
 }
 
 .blur:hover {
@@ -21,14 +26,19 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 0.75rem;
+}
+.photo2 {
+  background-image: url("../images/luwi.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .background {
   background-image: url("../images/Bg.jpg");
   background-repeat: no-repeat;
   background-position: inherit;
-  background-size: contain;
+  background-size: cover;
 }
 
 .btn2 {

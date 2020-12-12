@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen bg-gray-200">
-      <h1 className="mb-20 font-bold text-7xl">About Me.</h1>
+    <div className="flex flex-col items-center justify-center w-screen bg-gray-200">
+      <h1 className="mt-20 mb-16 text-5xl font-bold lg:text-7xl">About Me.</h1>
+      <div className="block max-w-6xl mb-5 lg:hidden">
+        <div className="w-64 h-64 photo2"></div>
+      </div>
       <div className="flex max-w-6xl">
-        <div className="w-2/3 p-5 mx-6 bg-white rounded-lg shadow-lg">
-          <h2 className="text-5xl font-semibold">Louie Jay Q. Sarraga</h2>
+        <div className="p-5 mx-6 mb-20 bg-white rounded-lg shadow-lg lg:w-2/3">
+          <h2 className="text-4xl font-semibold">Louie Jay Q. Sarraga</h2>
           <hr className="h-1 mx-5 border-red-600 my-7" />
           <p className="text-lg font-medium">
             Is a freelance junior front end web developer, and are skillful in
@@ -19,7 +22,7 @@ function About() {
             <Link to="/work">Projects</Link>
           </button>
         </div>
-        <div className="w-1/4 mx-6 photo"></div>
+        <div className="hidden w-1/4 mx-6 mb-20 photo lg:block"></div>
       </div>
     </div>
   );
