@@ -1,26 +1,3 @@
-.shopee {
-  background-image: url("../images/shoppee.png");
-}
-
-.hackreact {
-  background-image: url("../images/hackreact.png");
-}
-
-@media (min-width: 1024px) {
-  .blur {
-    filter: blur(3px);
-  }
-}
-.blur {
-  filter: none);
-}
-
-.blur:hover {
-  filter: none;
-  transition: ease-in-out;
-  transition: 200ms;
-}
-
 .photo {
   background-image: url("../images/luwi.jpeg");
   background-position: center;

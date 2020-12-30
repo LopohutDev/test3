@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
 
 function GetInTouch() {
   return (
@@ -10,37 +11,35 @@ function GetInTouch() {
           using <br /> the details above.
         </p>
       </div>
-      <div className="max-w-sm p-10 mx-auto mt-20 lg:max-w-6xl">
-        <div className="flex justify-between h-12 text-xs">
+      <div className="max-w-sm p-10 mx-auto mt-5 lg:mt-20 lg:max-w-6xl">
+        <div className="block text-xs lg:flex lg:h-12 lg:justify-between">
           <input
-            className="w-1/3 p-3 mr-4 bg-black border border-gray-500 opacity-60 input"
+            className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:mr-4 lg:w-1/3 opacity-60 input"
             placeholder="Name"
           />
           <input
-            className="w-1/3 p-3 mx-4 bg-black border border-gray-500 opacity-60 input"
+            className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:mx-4 lg:w-1/3 opacity-60 input"
             placeholder="Email Address"
           />
           <input
-            className="w-1/3 p-3 ml-4 bg-black border border-gray-500 opacity-60 input"
+            className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:ml-4 lg:w-1/3 opacity-60 input"
             placeholder="Phone Number"
           />
         </div>
         <div>
           <input
             placeholder="Subject"
-            className="w-full p-3 text-xs bg-black border border-gray-500 mt-7 opacity-60 input"
+            className="w-full p-3 text-xs bg-black border border-gray-500 rounded-xl mt-7 opacity-60 input"
           />
         </div>
         <div>
           <textarea
-            id="w3review"
-            name="w3review"
             rows="15"
             cols="100"
-            className="w-full p-3 mb-10 text-xs text-gray-400 bg-black border border-gray-500 mt-7 opacity-60 input"
-          >
-            Message
-          </textarea>
+            placeholder="message"
+            className="w-full p-3 text-xs text-gray-400 bg-black border border-gray-500 lg:mb-10 rounded-xl mt-7 opacity-60 input"
+          ></textarea>
+          <button className="w-32 h-10 btn2 rounded-xl">Submit</button>
         </div>
       </div>
     </div>
