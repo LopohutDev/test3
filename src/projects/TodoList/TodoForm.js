@@ -53,11 +53,11 @@ function TodoForm(props) {
               onChange={handleChange}
               name="text"
               ref={inputRef}
-              className="p-2 text-black border border-red-500 rounded-l-full h-14 focus:border-none"
+              className="p-2 text-black border-2 border-red-500 rounded-l-xl h-14 focus:border-none"
             />
             <button
               onClick={handleSubmit}
-              className="p-1 font-bold bg-red-500 border border-red-500 rounded-r-full h-14 hover:bg-red-900 focus:border-none"
+              className="p-1 font-bold bg-red-500 border-2 border-red-500 rounded-r-xl h-14 hover:bg-red-900 focus:border-none"
             >
               Add Todo
             </button>

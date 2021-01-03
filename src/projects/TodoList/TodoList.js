@@ -35,7 +35,7 @@ function TodoList() {
   };
 
   return (
-    <div className="w-full h-full max-w-sm py-5 mx-auto bg-white rounded-3xl">
+    <div className="w-full h-full max-w-sm py-5 mx-auto my-5 bg-white rounded-3xl">
       <h1 className="mx-5 text-4xl font-bold text-center">TODO LIST.</h1>
       <div className="flex flex-col items-center w-full p-5">
         <TodoForm onSubmit={addTodo} />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 function About() {
   return (
@@ -29,16 +30,16 @@ function About() {
             developing a website and they also teaches in-depth React Lessons.
           </p>
           <div className="flex">
-            <Zoom bottom left>
+            <Fade left>
               <button className="w-32 h-10 mx-2 mt-5 font-semibold border-2 border-black rounded-xl btn3">
                 <Link to="/work">Projects</Link>
               </button>
-            </Zoom>
-            <Zoom bottom right>
+            </Fade>
+            <Fade right>
               <button className="w-32 h-10 mx-2 mt-5 font-semibold border-2 border-black rounded-xl btn3">
                 <Link to="/contact">Contact Me</Link>
               </button>
-            </Zoom>
+            </Fade>
           </div>
         </div>
         <div className="hidden w-1/4 mx-6 mb-20 photo lg:block"></div>

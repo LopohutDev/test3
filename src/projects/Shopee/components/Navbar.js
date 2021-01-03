@@ -9,7 +9,7 @@ import Help from "../images/Help.png";
 
 function Navbar() {
   return (
-    <div className="fixed flex flex-col w-full h-32 p-2 bg-gradient-to-b from-red-600 to-yellow-600">
+    <div className="flex flex-col w-full h-32 p-2 bg-gradient-to-b from-red-600 to-yellow-600">
       <div className="flex items-center justify-around text-xs text-gray-300 lg:text-sm">
         <div className="flex mr-32">
           <button className="px-1 border-r border-gray-600 hover:text-gray-400">

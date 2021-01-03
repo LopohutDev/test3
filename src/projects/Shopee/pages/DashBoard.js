@@ -5,13 +5,15 @@ import Footer from "../components/Footer";
 
 function DashBoard() {
   return (
-    <div className="absolute">
-      <Navbar />
-      <Body />
-      <div className="w-full h-1 bg-red-600 from to-orange-600">
-        <p className="hidden">a</p>
+    <div className="w-full shopeeheight">
+      <h1 className="mt-2 text-3xl font-semibold text-center">
+        Sample Shopee.
+      </h1>
+      <div className="absolute m-4 border-2 border-black">
+        <Navbar />
+        <Body />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

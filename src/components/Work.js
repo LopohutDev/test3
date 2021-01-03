@@ -17,7 +17,6 @@ import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
 function Work({ match }) {
-  console.log(match);
   return (
     <div className="w-full">
       <Switch>

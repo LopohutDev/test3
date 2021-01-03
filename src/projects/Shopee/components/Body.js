@@ -14,7 +14,6 @@ import Footer from "./Footer";
 function body() {
   return (
     <div className="lg:px-40 lg:py-10 ">
-      <div className="h-32">a</div>
       <HeaderImage />
       <ShopeeIcons />
       <WelcomeGift />

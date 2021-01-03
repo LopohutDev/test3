@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 function Home() {
   return (
-    <div>
+    <div className="m-4 border-2 border-black">
       <div className="flex flex-col-reverse w-full font-sans bg-blue-300 lg:h-screen lg:flex-row">
         <div className="absolute hidden resize lg:w-screen lg:h-screen twitter lg:block"></div>
         <div className="z-10 flex items-center h-32 bg-white lg:hidden">
