@@ -7,7 +7,7 @@ import Shopee from "../projects/Shopee/pages/DashBoard";
 import DashBoard from "../projects/DashBoard/DashBoard";
 import Hackreactor from "../projects/Hackreactor/Hackreactor";
 import Twitter from "../projects/Twitter/Twitter";
-import Shopeeimg from "../images/Shopee.png";
+import Shopeeimg from "../images/Shopee2.png";
 import Hackreactorimg from "../images/HackReactor.png";
 import Dashboardimg from "../images/Dashboard.png";
 import TodoImg from "../images/Todo List.png";
