@@ -8,11 +8,11 @@ function Footer() {
       <div className="hidden w-16 mr-10 lg:mr-20 lg:w-32 lg:block">
         <img src={Logo} alt="lol" />
       </div>
-      <div className="flex items-center justify-start w-32 lg:hidden lg:max-w-sm">
-        <p className="lg:mr-32">© by LJ. Sarraga 2020</p>
+      <div className="flex items-center justify-start w-20 mr-6 text-xs lg:hidden">
+        <p className="">© by LJ. Sarraga 2020</p>
       </div>
       <div className="items-center justify-center hidden mx-auto text-center lg:block">
-        <p className="lg:mr-32">© by Louie Jay Sarraga 2020</p>
+        <p className="">© by Louie Jay Sarraga 2020</p>
       </div>
       <div className="flex max-w-2xl ">
         <button
@@ -22,7 +22,7 @@ function Footer() {
           }}
         >
           <svg
-            className="w-8 h-8 m-2 text-white fill-current"
+            className="w-8 h-8 text-white fill-current lg:m-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
           >
@@ -37,7 +37,7 @@ function Footer() {
           }}
         >
           <svg
-            className="w-8 h-8 m-2 text-white fill-current "
+            className="w-8 h-8 text-white fill-current lg:m-2 "
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -52,7 +52,7 @@ function Footer() {
           }}
         >
           <svg
-            className="w-8 h-8 m-2 text-white fill-current"
+            className="w-8 h-8 text-white fill-current lg:m-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
@@ -70,7 +70,7 @@ function Footer() {
           }}
         >
           <svg
-            className="w-8 h-8 m-2 text-white fill-current"
+            className="w-8 h-8 text-white fill-current lg:m-2"
             id="Bold"
             enable-background="new 0 0 24 24"
             height="512"

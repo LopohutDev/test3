@@ -3,9 +3,12 @@ import Fade from "react-reveal/Fade";
 
 function GetInTouch() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name);
+    alert(
+      `Thank You For Submitting your Contact Info, You will recieve an Email in a few daysa`
+    );
   };
   return (
     <div>
@@ -18,14 +21,21 @@ function GetInTouch() {
           </p>
         </div>
       </Fade>
-      <div className="max-w-sm p-10 mx-auto mt-5 lg:mt-20 lg:max-w-6xl">
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-sm p-10 mx-auto mt-5 lg:mt-20 lg:max-w-6xl"
+      >
         <Fade left cascade>
           <div className="block text-xs lg:flex lg:h-12 lg:justify-between">
             <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:mr-4 lg:w-1/3 opacity-60 input"
               placeholder="Name"
             />
             <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:mx-4 lg:w-1/3 opacity-60 input"
               placeholder="Email Address"
             />
@@ -51,10 +61,12 @@ function GetInTouch() {
               placeholder="message"
               className="w-full p-3 text-xs text-gray-400 bg-black border border-gray-500 lg:mb-10 rounded-xl mt-7 opacity-60 input"
             ></textarea>
-            <button className="w-32 h-10 btn2 rounded-xl">Submit</button>
+            <button type="submit" className="w-32 h-10 btn2 rounded-xl">
+              Submit
+            </button>
           </div>
         </Fade>
-      </div>
+      </form>
     </div>
   );
 }

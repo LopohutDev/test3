@@ -4,7 +4,7 @@ import Slide from "react-reveal/Slide";
 
 function Contact() {
   return (
-    <div className="w-screen text-white bg-black">
+    <div className="w-full text-white bg-black">
       <Slide left cascade>
         <div className="flex flex-col items-center justify-between max-w-sm pt-16 mx-auto lg:flex-row lg:max-w-7xl">
           <div className="flex flex-col items-center justify-center w-1/3 h-24 text-xs text-center lg:text-left lg:text-base lg:flex-row">
@@ -79,7 +79,6 @@ function Contact() {
           </div>
         </div>
       </Slide>
-
       <GetInTouch />
     </div>
   );

@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
+import photo from "../images/Louie.jpeg";
 
 function About() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen bg-gray-200">
+    <div className="flex flex-col items-center justify-center w-full bg-gray-200">
       <Zoom>
         <h1 className="mt-20 mb-16 text-5xl font-bold lg:text-7xl">
           About Me.
@@ -13,7 +14,10 @@ function About() {
       </Zoom>
       <div className="block max-w-6xl mb-5 lg:hidden">
         <Fade>
-          <div className="w-64 h-64 rounded-2xl photo2"></div>
+          <div
+            className="w-64 h-64 bg-center bg-no-repeat bg-contain rounded-2xl"
+            style={{ backgroundImage: `url(${photo})` }}
+          ></div>
         </Fade>
       </div>
       <div className="flex max-w-6xl">
@@ -45,7 +49,10 @@ function About() {
           </div>
         </div>
         <Fade>
-          <div className="hidden w-1/4 mx-6 mb-20 photo lg:block"></div>
+          <div
+            className="hidden w-1/4 mx-6 mb-20 bg-center bg-no-repeat bg-contain lg:block"
+            style={{ backgroundImage: `url(${photo})` }}
+          ></div>
         </Fade>
       </div>
     </div>
