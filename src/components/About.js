@@ -12,7 +12,9 @@ function About() {
         </h1>
       </Zoom>
       <div className="block max-w-6xl mb-5 lg:hidden">
-        <div className="w-64 h-64 rounded-2xl photo2"></div>
+        <Fade>
+          <div className="w-64 h-64 rounded-2xl photo2"></div>
+        </Fade>
       </div>
       <div className="flex max-w-6xl">
         <div className="p-5 mx-6 mb-20 bg-white rounded-lg shadow-lg lg:w-2/3">
@@ -42,7 +44,9 @@ function About() {
             </Fade>
           </div>
         </div>
-        <div className="hidden w-1/4 mx-6 mb-20 photo lg:block"></div>
+        <Fade>
+          <div className="hidden w-1/4 mx-6 mb-20 photo lg:block"></div>
+        </Fade>
       </div>
     </div>
   );
