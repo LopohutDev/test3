@@ -6,11 +6,11 @@ import "./Styles/hackreactor.css";
 
 function Hackreactor() {
   return (
-    <div>
+    <div className="w-full lg:m-4">
       <h1 className="mt-2 text-3xl font-semibold text-center">
         Sample HackReactor.
       </h1>
-      <div className="block w-screen m-4 font-sans border-2 border-black">
+      <div className="block w-full p-4 font-sans border-t-2 border-black lg:border-2 lg:">
         <Navbar />
         <Body />
         <Footer />

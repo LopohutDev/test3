@@ -8,7 +8,7 @@ function DashBoard() {
       <h1 className="mt-2 text-3xl font-semibold text-center">
         Sample DashBoard.
       </h1>
-      <div className="m-4 border-2 border-white">
+      <div className="m-4 border-2 border-black">
         <div>
           <Navbar />
         </div>

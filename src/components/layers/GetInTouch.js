@@ -4,10 +4,18 @@ import Fade from "react-reveal/Fade";
 function GetInTouch() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(name);
+    console.log(email);
+    console.log(phone);
+    console.log(subject);
+    console.log(message);
     alert(
-      `Thank You For Submitting your Contact Info, You will recieve an Email in a few daysa`
+      "Thank You For Submitting your Contact Info, You will recieve an Email in a few days"
     );
   };
   return (
@@ -26,21 +34,23 @@ function GetInTouch() {
         className="max-w-sm p-10 mx-auto mt-5 lg:mt-20 lg:max-w-6xl"
       >
         <Fade left cascade>
-          <div className="block text-xs lg:flex lg:h-12 lg:justify-between">
+          <div className="block text-xs lg:flex lg:h-14 lg:justify-between">
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:mr-4 lg:w-1/3 opacity-60 input"
+              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg lg:mr-4 lg:w-1/3 input"
               placeholder="Name"
             />
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:mx-4 lg:w-1/3 opacity-60 input"
+              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg lg:mx-4 lg:w-1/3 input"
               placeholder="Email Address"
             />
             <input
-              className="w-full p-3 my-2 bg-black border border-gray-500 rounded-xl lg:ml-4 lg:w-1/3 opacity-60 input"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg lg:ml-4 lg:w-1/3 input"
               placeholder="Phone Number"
             />
           </div>
@@ -48,18 +58,22 @@ function GetInTouch() {
         <Fade>
           <div>
             <input
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               placeholder="Subject"
-              className="w-full p-3 text-xs bg-black border border-gray-500 rounded-xl mt-7 opacity-60 input"
+              className="w-full p-3 my-3 text-xs text-gray-400 bg-black border rounded-lg input"
             />
           </div>
         </Fade>
         <Fade>
           <div>
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               rows="15"
               cols="100"
-              placeholder="message"
-              className="w-full p-3 text-xs text-gray-400 bg-black border border-gray-500 lg:mb-10 rounded-xl mt-7 opacity-60 input"
+              placeholder="Message"
+              className="w-full p-3 mt-3 text-xs text-gray-400 bg-black border lg:mb-10 rounded-xl input"
             ></textarea>
             <button type="submit" className="w-32 h-10 btn2 rounded-xl">
               Submit

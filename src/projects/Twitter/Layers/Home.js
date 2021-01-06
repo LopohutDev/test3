@@ -3,9 +3,10 @@ import Footer from "./Footer";
 
 function Home() {
   return (
-    <div className="m-4 border-2 border-black">
+    <div className="m-4 border-2 border-black ">
       <div className="flex flex-col-reverse w-full font-sans bg-blue-300 lg:h-screen lg:flex-row">
         <div className="absolute hidden resize lg:w-screen lg:h-screen twitter lg:block"></div>
+        <div className="absolute block w-full h-full twitter2 lg:hidden"></div>
         <div className="z-10 flex items-center h-32 bg-white lg:hidden">
           <button className="w-full h-10 mx-2 text-sm font-bold text-white bg-blue-400 rounded-full hover:bg-blue-500">
             Sign up
@@ -14,7 +15,6 @@ function Home() {
             Log in
           </button>
         </div>
-        <div className="absolute block w-full h-full twitter2 lg:hidden"></div>
         <div className="z-10 flex items-center justify-center h-full text-xl font-bold text-white lg:w-1/2">
           <div className="z-10 p-5 text-sm lg:text-base">
             <div className="flex items-center mb-10 ">

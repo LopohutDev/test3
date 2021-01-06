@@ -14,10 +14,9 @@ function About() {
       </Zoom>
       <div className="block max-w-6xl mb-5 lg:hidden">
         <Fade>
-          <div
-            className="w-64 h-64 bg-center bg-no-repeat bg-contain rounded-2xl"
-            style={{ backgroundImage: `url(${photo})` }}
-          ></div>
+          <div className="w-64 h-64 rounded-2xl">
+            <img src={photo} alt="louie" />
+          </div>
         </Fade>
       </div>
       <div className="flex max-w-6xl">
@@ -49,10 +48,9 @@ function About() {
           </div>
         </div>
         <Fade>
-          <div
-            className="hidden w-1/4 mx-6 mb-20 bg-center bg-no-repeat bg-contain lg:block"
-            style={{ backgroundImage: `url(${photo})` }}
-          ></div>
+          <div className="hidden w-1/4 h-full mx-6 mt-10 mb-20 lg:block">
+            <img src={photo} alt="louie" />
+          </div>
         </Fade>
       </div>
     </div>
