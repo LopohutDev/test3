@@ -11,8 +11,8 @@ function LoginPage() {
         Sample Log-In Page.
       </h1>
       <div className="flex m-4 border-2 border-black">
-        <div className="w-1/2 h-screen p-12">
-          <div className="flex items-center justify-center w-20 h-16 text-xl font-bold text-white bg-black">
+        <div className="flex flex-col items-center justify-center p-12 lg:block lg:w-1/2 lg:h-screen">
+          <div className="flex items-center justify-center w-20 h-16 text-xl font-bold text-white bg-black rounded">
             Logo
           </div>
           <Router>
@@ -22,7 +22,7 @@ function LoginPage() {
             </Switch>
           </Router>
         </div>
-        <div className="w-1/2 bg-pink-500">
+        <div className="hidden bg-pink-500 lg:block lg:w-1/2">
           <Image />
         </div>
       </div>

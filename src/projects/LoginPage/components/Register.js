@@ -6,7 +6,7 @@ export class Register extends Component {
     return (
       <div className="max-w-2xl mx-auto">
         <div className="mt-20 text-3xl">
-          <div className="w-full ">
+          <div className="w-full text-center lg:text-left">
             Join Us.
             <form className="flex flex-col w-full text-lg">
               <label className="mt-10 text-left">Name</label>
@@ -35,7 +35,7 @@ export class Register extends Component {
                 Register
               </button>
             </div>
-            <div className="mt-12 mb-20 text-base">
+            <div className="mt-12 mb-20 text-xs lg:text-base">
               Already have an account?{" "}
               <Link to="/">
                 <b>

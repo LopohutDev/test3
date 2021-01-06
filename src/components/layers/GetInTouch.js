@@ -38,19 +38,19 @@ function GetInTouch() {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg lg:mr-4 lg:w-1/3 input"
+              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg focus:outline-none lg:mr-4 lg:w-1/3 input"
               placeholder="Name"
             />
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg lg:mx-4 lg:w-1/3 input"
+              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg focus:outline-none lg:mx-4 lg:w-1/3 input"
               placeholder="Email Address"
             />
             <input
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg lg:ml-4 lg:w-1/3 input"
+              className="w-full p-3 my-2 text-gray-400 bg-black border rounded-lg focus:outline-none lg:ml-4 lg:w-1/3 input"
               placeholder="Phone Number"
             />
           </div>
@@ -61,7 +61,7 @@ function GetInTouch() {
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               placeholder="Subject"
-              className="w-full p-3 my-3 text-xs text-gray-400 bg-black border rounded-lg input"
+              className="w-full p-3 my-3 text-xs text-gray-400 bg-black border rounded-lg focus:outline-none input"
             />
           </div>
         </Fade>
@@ -73,7 +73,7 @@ function GetInTouch() {
               rows="15"
               cols="100"
               placeholder="Message"
-              className="w-full p-3 mt-3 text-xs text-gray-400 bg-black border lg:mb-10 rounded-xl input"
+              className="w-full p-3 mt-3 text-xs text-gray-400 bg-black border focus:outline-none lg:mb-10 rounded-xl input"
             ></textarea>
             <button type="submit" className="w-32 h-10 btn2 rounded-xl">
               Submit

@@ -51,10 +51,10 @@ function Navbar() {
         <div className="w-2/3 ">
           <div className="flex w-full p-2 bg-white rounded">
             <input
-              className="w-full h-8 text-sm rounded"
+              className="w-full h-8 text-sm rounded focus:outline-none"
               placeholder="Search for products, brands and shops"
             />
-            <button className="w-16 px-5 bg-orange-600 rounded">
+            <button className="w-16 px-5 bg-yellow-600 rounded focus:outline-none">
               <img className="w-6 " src={Search} alt="l" />
             </button>
           </div>

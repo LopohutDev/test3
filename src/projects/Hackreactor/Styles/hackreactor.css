@@ -1,8 +1,14 @@
 .bg {
   background-image: url("../images/big.jpg");
   background-repeat: no-repeat;
-  /* background-position: ; */
-  background-size: cover;
+  background-position: top center;
+  background-size: 1400px;
+}
+@media (min-width: 1024px) {
+  .bg {
+    background-size: cover;
+    background-position: center;
+  }
 }
 /* Logo */
 .fb {

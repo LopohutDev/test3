@@ -27,7 +27,7 @@ function TodoForm(props) {
     <form onSubmit={handleSubmit} className="w-full mt-2 text-black">
       {props.edit ? (
         <>
-          <div className="flex items-center justify-between h-16 text-black bg-black border-2 border-red-500 rounded-xl">
+          <div className="flex items-center justify-between h-16 text-black border-2 border-red-500 rounded-xl">
             <input
               placeholder="Update your item"
               value={input}
@@ -37,7 +37,7 @@ function TodoForm(props) {
               className="w-full h-full p-2 text-black bg-white rounded-l-xl"
             />
             <button
-              className="h-full p-2 hover:bg-red-500 rounded-r-xl"
+              className="h-full p-2 font-bold text-white bg-red-500 border-2 border-red-500 rounded-r hover:bg-red-900 focus:border-none"
               onClick={handleSubmit}
             >
               Update
@@ -57,7 +57,7 @@ function TodoForm(props) {
             />
             <button
               onClick={handleSubmit}
-              className="p-1 font-bold bg-red-500 border-2 border-red-500 rounded-r-xl h-14 hover:bg-red-900 focus:border-none"
+              className="font-bold text-white bg-red-500 border-2 border-red-500 rounded-r-xl hover:bg-red-900 focus:border-none"
             >
               Add Todo
             </button>

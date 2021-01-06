@@ -1,14 +1,43 @@
 import React from "react";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import shopee2 from "../../../images/shopee2.jfif";
+import shopee3 from "../../../images/shopee3.jfif";
 
 function HeaderImage() {
   return (
     <div className="flex mt-8">
-      <div className="w-2/3 mr-1 bg-pink-500 rounded">
-        <img
-          className="w-full h-full rounded"
-          src="https://cf.shopee.ph/file/ee23405983ad8407e4b5bbac05ca4f7e_xxhdpi"
-          alt="lmao"
-        />
+      <div className="w-2/3 mr-1 rounded">
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={31}
+          totalSlides={3}
+          interval={2000}
+          isPlaying={true}
+          infinite={true}
+        >
+          <Slider className="w-full h-full">
+            <Slide index={0}>
+              <img
+                className="w-full h-full rounded"
+                src="https://cf.shopee.ph/file/ee23405983ad8407e4b5bbac05ca4f7e_xxhdpi"
+                alt="lmao"
+              />
+            </Slide>
+            <Slide index={1}>
+              <img className="w-full h-full rounded" src={shopee2} alt="lmao" />
+            </Slide>
+            <Slide index={2}>
+              <img className="w-full h-full rounded" src={shopee3} alt="lmao" />
+            </Slide>
+          </Slider>
+        </CarouselProvider>
       </div>
       <div className="flex flex-col w-1/3 mr-1">
         <div className="h-32 mb-1 rounded">

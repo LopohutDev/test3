@@ -4,51 +4,16 @@ import Graph2 from "../../images/Graph2.png";
 import Graph3 from "../../images/Graph3.png";
 import Graph4 from "../../images/Graph4.png";
 import Ads from "../../images/ads.png";
+import DataGraphsFunction from "../dataFunctions/DataGraphsFunction";
 
 function DataGraphs() {
   return (
     <div className="m-2">
       <div className="flex flex-wrap w-full">
-        <div className="w-full p-2 lg:w-1/3">
-          <div className="w-full h-full rounded-lg shadow-lg">
-            <div className="w-full h-10 p-2 text-base text-gray-600 bg-gray-400 rounded-t-lg shadow-md">
-              <b>GRAPH</b>
-            </div>
-            <div>
-              <img className="rounded-b-lg" src={Graph1} alt="123" />
-            </div>
-          </div>
-        </div>
-        <div className="w-full p-2 lg:w-1/3">
-          <div className="w-full h-full rounded-lg shadow-lg">
-            <div className="w-full h-10 p-2 text-base text-gray-600 bg-gray-400 rounded-t-lg shadow-md">
-              <b>GRAPH</b>
-            </div>
-            <div>
-              <img className="rounded-b-lg" src={Graph2} alt="123" />
-            </div>
-          </div>
-        </div>
-        <div className="w-full p-2 lg:w-1/3">
-          <div className="w-full h-full rounded-lg shadow-lg">
-            <div className="w-full h-10 p-2 text-base text-gray-600 bg-gray-400 rounded-t-lg shadow-md">
-              <b>GRAPH</b>
-            </div>
-            <div>
-              <img className="rounded-b-lg" src={Graph3} alt="123" />
-            </div>
-          </div>
-        </div>
-        <div className="w-full p-2 lg:w-1/3">
-          <div className="w-full h-full rounded-lg shadow-lg">
-            <div className="w-full h-10 p-2 text-base text-gray-600 bg-gray-400 rounded-t-lg shadow-md">
-              <b>GRAPH</b>
-            </div>
-            <div>
-              <img className="rounded-b-lg" src={Graph4} alt="123" />
-            </div>
-          </div>
-        </div>
+        <DataGraphsFunction img={Graph1} />
+        <DataGraphsFunction img={Graph2} />
+        <DataGraphsFunction img={Graph3} />
+        <DataGraphsFunction img={Graph4} />
         <div className="w-full p-2 lg:w-1/3">
           <div className="w-full rounded-lg shadow-lg">
             <div className="w-full h-10 p-2 text-base text-gray-600 bg-gray-400 rounded-t-lg shadow-md">

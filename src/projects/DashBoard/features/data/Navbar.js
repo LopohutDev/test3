@@ -21,19 +21,15 @@ function Navbar() {
           />
         </div>
       </div>
-      <div className="flex w-full lg:w-2/6">
-        <div className="items-center w-full ">
-          <button className="mx-6 mt-2 text-white lg:mx-8 lg:mt-0">
-            Active
-          </button>
-          <button className="mx-6 mt-2 text-gray-600 lg:mx-8 hover:text-white lg:mt-0">
-            link
-          </button>
-          <button className="mx-6 mt-2 text-white lg:mx-8 lg:mt-0">
-            &#129302; Hi, User
-            <img src={Caret} alt="caret" className="inline w-4 mx-2" />
-          </button>
-        </div>
+      <div className="flex items-center w-full justify-evenly lg:w-2/6">
+        <button className="mt-2 text-white lg:mx-8 lg:mt-0">Active</button>
+        <button className="mt-2 text-gray-600 lg:mx-8 hover:text-white lg:mt-0">
+          link
+        </button>
+        <button className="flex items-center mt-2 text-white lg:mx-8 lg:mt-0">
+          &#129302; Hi, User
+          <img src={Caret} alt="caret" className="w-4 ml-1 " />
+        </button>
       </div>
     </div>
   );

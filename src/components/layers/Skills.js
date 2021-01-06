@@ -33,9 +33,9 @@ function Skills() {
           I am a Front End Web Developer and here are my skills :
         </p>
       </div>
-      <div className="flex max-w-4xl mx-auto mt-10">
+      <div className="flex flex-col max-w-4xl mx-auto mt-10 lg:flex-row">
         <Fade left>
-          <div className="w-1/2 p-2 m-2 bg-red-800 lg:p-4 lg:m-6 rounded-2xl">
+          <div className="p-2 m-2 bg-red-800 w-lg:1/2 lg:p-4 lg:m-6 rounded-2xl">
             <div className="flex items-center justify-center w-16 h-16 p-2 mx-auto text-sm bg-gray-600 rounded-full lg:w-20 lg:h-20 my-7">
               <svg
                 className="w-12 h-12 text-white fill-current "
@@ -88,7 +88,7 @@ function Skills() {
           </div>
         </Fade>
         <Fade right>
-          <div className="w-1/2 p-2 m-2 bg-red-800 lg:p-4 lg:m-6 rounded-2xl">
+          <div className="p-2 m-2 bg-red-800 lg:w-1/2 lg:p-4 lg:m-6 rounded-2xl">
             <div className="flex items-center justify-center w-16 h-16 p-2 mx-auto text-sm bg-gray-600 rounded-full lg:w-20 lg:h-20 my-7">
               <svg
                 className="w-10 h-10 text-white fill-current"
