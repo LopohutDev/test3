@@ -11,7 +11,7 @@ function Infos() {
         <p className="mt-5">Scholarships</p>
         <p className="mt-5">Tour</p>
       </div>
-      <hr className="w-full mt-5" />
+      <hr className="block w-full mt-5 lg:hidden" />
       <div className="mt-10 lg:mt-auto">
         <h1 className="font-bold">COMPANY</h1>
         <p className="mt-5">About</p>
@@ -19,14 +19,14 @@ function Infos() {
         <p className="mt-5">Blog</p>
         <p className="mt-5">Regulatory Information</p>
       </div>
-      <hr className="w-full mt-5" />
+      <hr className="block w-full mt-5 lg:hidden" />
       <div className="mt-10 lg:mt-auto">
         <h1 className="font-bold">More</h1>
         <p className="mt-5">Partnerships</p>
         <p className="mt-5">FAQ</p>
         <p className="mt-5">Enterprise</p>
       </div>
-      <hr className="w-full mt-5" />
+      <hr className="block w-full mt-5 lg:hidden" />
       <div className="mt-10 lg:mt-auto">
         <h1 className="font-bold">REVIEWS</h1>
         <div className="flex">
@@ -35,7 +35,7 @@ function Infos() {
           <p className="m-5 mx-2">Yelp</p>
           <p className="m-5 mx-2">Course Report</p>
         </div>
-        <hr />
+        <hr className="lg:hidden" />
         <h1 className="mt-5 font-bold lg:mt-auto">SOCIAL</h1>
         <Social />
       </div>
