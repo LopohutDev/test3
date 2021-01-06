@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
-import photo from "../images/Louie.jpeg";
+import photo from "../images/Louie.png";
 
 function About() {
   return (
