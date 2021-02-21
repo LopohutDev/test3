@@ -4,11 +4,9 @@ import Todo from "./Todo";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
-
+  console.log(todos);
   const addTodo = (todo) => {
     const newTodos = [todo, ...todos];
-
-    setTodos(newTodos);
     console.log(...todos);
   };
 
